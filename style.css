@@ -1,0 +1,159 @@
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("wonders.jpg");
+	height: 100vh; 
+	background-size: cover;
+	background-position: center; 
+	overflow: auto; 
+}
+
+.container{
+	height: 400px;
+	width: 1000px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	background: rgba(255,255,255,0.5);
+	padding: 20px;
+	border: 1px solid #08038C;
+	box-shadow: 0 0 8px 3px #fff; 
+	display: table-row;
+	overflow: scroll; 
+}
+
+
+.title{
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	border: 1px solid white; 
+	padding: 10px 30px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 50px; 
+	border-radius: 20px;
+	background-color: teal;
+	font-family: Trebuchet MS;
+
+}
+
+.next-btn{
+	border: none;
+	outline: none;
+	background: rgba(255, 255, 255, 0.5);
+	width: 100px
+	height: 35px;
+	border-radius: 20px;
+	cursor: pointer;
+	float: right;
+	margin: 10px;
+}
+
+.next-btn:hover{
+	background: lightblue; 
+}
+
+.question{
+	text-align: center; 
+	text-transform: uppercase;
+	padding: 10px 30px;
+	font-size: 22px;
+	background: teal; 
+	margin: 10px 0 10px 0;
+	color: white; 
+	border-radius: 20px 
+	border: 1px solid white; 
+	font-family: Trebuchet MS;
+}
+
+.option{
+	width: 900px;
+	height: 10px; 
+	display: block;
+	padding: 20px 30px; 
+	vertical-align: middle;
+	background: rgba(255,255,255,0.5);
+	margin: 10px; 
+	border-radius: 20px; 
+	font-family: Trebuchet MS;
+	overflow: scroll; 
+	display: flex;
+}
+
+.option:hover{
+	background: lightblue;  
+}
+
+.result{
+	height: 100px;
+	text-align: center;
+	font-size: 75px;
+}
+
+.button{
+	/*position: absolute;
+    top: 50%;*/
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+
+}
+
+.btn{
+	border: 1px solid white; 
+	padding: 10px 30px;
+	color: white;
+	text-transform: uppercase;
+	font-size: 50px; 
+	background-color: teal;
+	font-family: Trebuchet MS;
+}
+
+.btn-one {
+	font-size: 18px; 
+	float: right; 
+	padding:5px 10px;
+	font-family: Trebuchet MS;
+}
+
+a:hover {
+	background-color: lightblue; 
+}
+#map {
+
+    height: 90vh; 
+	background-size: cover;
+	background-position: center; 
+	overflow: auto; 
+}
+
+h1{
+	font-family: Trebuchet MS; 
+	color: white;
+	font-size: 50px; 
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	margin: 0;
+  	padding:0;
+}
+
+div{
+	display: flex;
+}
+p{
+	padding:0px;
+	margin: 0; 
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+  	font-size: 27px; 
+  	color: white;
+  	font-family: Trebuchet MS;
+}
+
+
+
+
+
+
