@@ -1,3 +1,4 @@
+var infoWindow;
 // Initialize and add the map
 function initMap() {
   // location of initial focus of map (PARIS)
@@ -6,6 +7,8 @@ function initMap() {
   //new map object
   var map = new google.maps.Map(
       document.getElementById('map'), {zoom: 2.8, center: focus});
+    
+  
 
 // adding markers to various locations
  function addMarker(properties){
@@ -15,12 +18,15 @@ function initMap() {
   });
 	//check if content is present
 	if (properties.words){
-		var infoWindow = new google.maps.InfoWindow({
+		infoWindow = new google.maps.InfoWindow({
   		content: properties.words
   	  }); 
 
 		//listener for the click
 	    marker.addListener('click', function(){
+           if (infoWindow){
+                infoWindow.close()
+           }
   	    infoWindow.open(map,marker); 
       }); 
 	}
